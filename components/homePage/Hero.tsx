@@ -23,7 +23,7 @@ export default function Hero() {
 						<Social />
 					</div>
 				</div>
-				<div className='w-[47%] absolute bottom-0 right-10'>
+				<div className='w-[47%] absolute z-0 bottom-0 right-10'>
 					<SvgRenderer
 						filePath='/assets/vectors/hero.png'
 						widthClassProperties='w-full'

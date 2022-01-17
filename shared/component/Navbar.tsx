@@ -3,11 +3,11 @@ import SvgRenderer from "./svgRenderer";
 
 export const Navbar = () => {
 	return (
-		<nav className='flex items-center w-full font-[SF_Pro_Display_Regular] font-lightBlack h-20 px-14 justify-center space-x-8 drop-shadow'>
+		<nav className='bg-darkBlue fixed z-100 top-0 left-0 flex items-center w-full font-[SF_Pro_Display_Regular] font-lightBlack h-20 px-14 justify-center space-x-8 drop-shadow'>
 			<div className='flex items-center space-x-8 place-self-center float-right'>
 				<a
 					href='/work'
-					className='hover:underline underline-offset-4 transition-all delay-20 duration-400 hover:text-orange'>
+					className='hover:underline text-white underline-offset-4 transition-all delay-20 duration-400 hover:text-orange'>
 					Work
 				</a>
 				<a href='/'>
@@ -17,7 +17,7 @@ export const Navbar = () => {
 				</a>
 				<a
 					href='/contact'
-					className='hover:underline underline-offset-4 transition-all delay-20 duration-400 hover:text-orange'>
+					className='text-white hover:underline underline-offset-4 transition-all delay-20 duration-400 hover:text-orange'>
 					Contact
 				</a>
 			</div>
