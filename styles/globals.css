@@ -1,3 +1,46 @@
+@tailwind base;
+@tailwind components;
+
+@font-face {
+  font-family: "SF-Pro-Display-Light";
+  src: local("SF-Pro-Display-Light"),
+    url(/public/assets/fonts/SF-Pro-Display/sf-ui-display-light.woff) format("woff");
+}
+
+@font-face {
+  font-family: "SF-Pro-Display-Bold";
+  src: local("SF-Pro-Display-Bold"),
+    url(/public/assets/fonts/SF-Pro-Display/sf-ui-display-bold.woff) format("woff");
+}
+
+@font-face {
+  font-family: "SF-Pro-Display-SemiBold";
+  src: local("SF-Pro-Display-Bold"),
+    url(/public/assets/fonts/SF-Pro-Display/sf-ui-display-semibold.woff)
+      format("woff");
+}
+
+@font-face {
+  font-family: "SF-Pro-Display-Medium";
+  src: local("SF-Pro-Display-Medium"),
+    url(/public/assets/fonts/SF-Pro-Display/sf-ui-display-medium.woff) format("woff");
+}
+
+input:focus-within ~ label {
+  @apply transform scale-75 -translate-y-6;
+}
+
+input:focus-within ~ label,
+input:not(:placeholder-shown) ~ label {
+  @apply transform scale-75 -translate-y-6;
+}
+
+/* input:focus-within ~ label {
+	@apply text-blue-500;
+} */
+
+@tailwind utilities;
+
 html,
 body {
   padding: 0;
