@@ -3,6 +3,12 @@ module.exports = {
     "./pages/**/*.{js,ts,jsx,tsx}",
     "./components/**/*.{js,ts,jsx,tsx}",
   ],
+  purge: [
+    "./pages/**/*.{js,ts,jsx,tsx}",
+    "./components/**/*.{js,ts,jsx,tsx}",
+    "./shared/**/*.{js,ts,jsx,tsx}",
+    "./assets/**/*.svg",
+  ],
   theme: {
     extend: {
       colors: {
