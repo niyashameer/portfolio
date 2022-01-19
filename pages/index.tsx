@@ -5,11 +5,12 @@ import Social from "../shared/component/social";
 import Hero from "../components/homePage/Hero";
 import { About } from "../components/homePage/About";
 import { Navbar } from "../shared/component/Navbar";
+import { Music } from "../components/homePage/Music";
 
 export default function Home() {
 	return (
 		<div
-			className={`text-lightBlack ${styles.container} font-[SF_Pro_Display_Regular]`}>
+			className={`text-lightBlack font-[SF_Pro_Display_Regular] w-full`}>
 			<Head>
 				<title>Niya Shameer | Portfolio</title>
 				<meta name='description' content='Personal Portfolio of Niya Shameer' />
@@ -18,6 +19,7 @@ export default function Home() {
 			<Navbar />
 			<Hero />
 			<About />
+			<Music />
 		</div>
 	);
 }
