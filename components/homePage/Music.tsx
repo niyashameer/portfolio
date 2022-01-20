@@ -1,7 +1,7 @@
 import React from "react";
 import SvgRenderer from "../../shared/component/svgRenderer";
 
-export const Music = () => {
+const Music = () => {
 	return (
 		<div className='relative bg-darkBlue h-screen p-20'>
 			<div className='w-10/12 mx-auto font-[SF_Pro_Display_Regular] text-white font-bold text-4xl'>
@@ -22,3 +22,5 @@ export const Music = () => {
 		</div>
 	);
 };
+
+export default Music

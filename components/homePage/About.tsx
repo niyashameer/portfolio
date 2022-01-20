@@ -1,7 +1,7 @@
 import React from "react";
 import SvgRenderer from "../../shared/component/svgRenderer";
 
-export const About = () => {
+const About = () => {
 	return (
 		<div className='relative h-screen px-14 py-14 flex'>
 			<div className='relative w-5/12'>
@@ -29,3 +29,4 @@ export const About = () => {
 		</div>
 	);
 };
+export default About
