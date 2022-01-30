@@ -37,7 +37,7 @@ export default function Home() {
 			<Navbar state={navbar}/>
 			<Hero />
 			<About />
-			<Music />
+			{/* <Music /> */}
 			<Skills />
 		</div>
 	);
