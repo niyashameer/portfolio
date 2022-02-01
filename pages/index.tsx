@@ -9,7 +9,7 @@ export default function Home() {
 
 	return (
 		<div
-			className={`text-lightBlack font-[SF_Pro_Display_Regular] w-full`}>
+			className={`text-lightBlack font-[SF_Pro_Display_Regular] w-full overflow-hidden`}>
 			<Head>
 				<title>Niya Shameer | Portfolio</title>
 				<meta name='description' content='Personal Portfolio of Niya Shameer' />

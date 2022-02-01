@@ -5,7 +5,7 @@ import Projects from "../components/work/Projects";
 import WorkExp from "../components/work/Work";
 
 const Work = () => {
-    return <div>
+    return <div className="text-lightBlack font-[SF_Pro_Display_Regular] w-full overflow-hidden">
         <Clubs />
         <WorkExp />
         <Music />
