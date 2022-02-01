@@ -1,13 +1,31 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import SvgRenderer from "./svgRenderer";
 
 function Navbar(props: { state: boolean }) {
+	const [progress, setProgress] = useState<number>(0);
+
+	useEffect(() => {
+		const timer = setTimeout(async () => {
+			await setProgress(500);
+			console.log(progress);
+		}, 500);
+		return () => {
+			clearTimeout(timer);
+			setProgress(50);
+		};
+	}, []);
+
 	return (
-		<nav className={`${props.state? `bg-darkBlue text-white `: `bg-lightBlack text-white `} z-50 top-0 left-0 flex items-center w-full font-[SF_Pro_Display_Regular] font-lightBlack h-[4.5rem] px-14 justify-center space-x-8 transition-all delay-150`}>
+		<nav
+			className={`${
+				props.state
+					? `bg-darkBlue text-white h-[3.3rem] drop-shadow-2xl`
+					: `border-x-[${progress}px] border-darkBlue text-black `
+			} z-50 top-0 left-0 flex items-center w-full font-[SF_Pro_Display_Regular] font-lightBlack h-[4.5rem] px-14 justify-center space-x-8 transition-all delay-150 mx-auto text-lg hover:bg-darkBlue hover:text-white hover:drop-shadow-3xl`}>
 			<div className='flex items-center space-x-8 place-self-center float-right'>
 				<a
 					href='/work'
-					className='hover:underline underline-offset-4 transition-all delay-20 duration-400 hover:text-orange'>
+					className='transition-all delay-20 duration-400 hover:text-orange'>
 					Work
 				</a>
 				<a href='/'>
@@ -17,7 +35,7 @@ function Navbar(props: { state: boolean }) {
 				</a>
 				<a
 					href='/contact'
-					className='hover:underline underline-offset-4 transition-all delay-20 duration-400 hover:text-orange'>
+					className='transition-all delay-20 duration-400 hover:text-orange'>
 					Contact
 				</a>
 			</div>

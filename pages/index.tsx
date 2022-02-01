@@ -8,6 +8,7 @@ import Navbar from "../shared/component/Navbar";
 import Music from "../components/homePage/Music";
 import { useEffect, useState } from "react";
 import Skills from "../components/homePage/Skills";
+import Achievements from "../components/homePage/Achievements";
 
 export default function Home() {
 
@@ -19,7 +20,6 @@ export default function Home() {
 	})
 	
 	const changeBackground = () => {
-		console.log(window.scrollY)
 		if (window.scrollY >= 66) {
 		  setNavbar(true)
 		} else {
@@ -39,6 +39,7 @@ export default function Home() {
 			<About />
 			{/* <Music /> */}
 			<Skills />
+			<Achievements />
 		</div>
 	);
 }
