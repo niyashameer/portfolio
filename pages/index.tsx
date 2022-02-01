@@ -2,7 +2,6 @@ import Head from "next/head";
 import styles from "../styles/Home.module.css";
 import Hero from "../components/homePage/Hero";
 import About from "../components/homePage/About";
-import Music from "../components/homePage/Music";
 import Skills from "../components/homePage/Skills";
 import Achievements from "../components/homePage/Achievements";
 
@@ -18,7 +17,6 @@ export default function Home() {
 			</Head>
 			<Hero />
 			<About />
-			{/* <Music /> */}
 			<Skills />
 			<Achievements />
 		</div>

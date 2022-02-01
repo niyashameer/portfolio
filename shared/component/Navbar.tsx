@@ -19,9 +19,9 @@ function Navbar(props: { state: boolean }) {
 		<nav
 			className={`${
 				props.state
-					? `bg-darkBlue text-white h-[3.2rem] drop-shadow-2xl`
+					? `bg-darkBlue text-white h-[4rem] drop-shadow-2xl`
 					: `border-x-[${progress}px] border-darkBlue text-black`
-			} z-50 top-0 left-0 flex items-center w-full font-[SF_Pro_Display_Regular] font-lightBlack h-[4.5rem] px-14 justify-center space-x-8 transition-all delay-150 mx-auto text-lg hover:bg-darkBlue hover:text-white hover:drop-shadow-3xl`}>
+			} z-50 top-0 left-0 flex items-center w-full font-[SF_Pro_Display_Regular] font-lightBlack h-[4.5rem] px-14 justify-center space-x-8 transition-all delay-500 mx-auto text-lg hover:bg-darkBlue hover:text-white hover:drop-shadow-3xl`}>
 			<div className='flex items-center space-x-8 place-self-center float-right'>
 				<a
 					href='/work'

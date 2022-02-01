@@ -16,9 +16,9 @@ const Music = () => {
 					/>
 				</audio>
 			</div>
-			{/* <div className='absolute -bottom-0 -left-16 bg-black w-40 h-40 rounded-full flex items-center justify-center'>
+			<div className='absolute -bottom-0 -left-20 bg-black w-40 h-40 rounded-full flex items-center justify-center'>
 				<div className='relative bg-gray w-24 h-24 rounded-full self-center'></div>
-			</div> */}
+			</div>
 		</div>
 	);
 };
