@@ -15,7 +15,7 @@ const Clubs = () => {
                 <Club filePath="assets/vectors/alexa-svg.svg" text1="alexa" text2="devel" text3="opers" text4="srm" />
                 <Club filePath="assets/vectors/geny-svg.svg" text1="team" text2="gen" text3="y" text4="srm" />
                 <Club filePath="assets/vectors/srmmun.svg" text1="srm" text2="mun" text3="soci" text4="ety" />
-                <Club filePath="assets/vectors/alexa-svg.svg" text1="srm" text2="liter" text3="ary" text4="soc"/>
+                {/* <Club filePath="assets/vectors/alexa-svg.svg" text1="srm" text2="liter" text3="ary" text4="soc"/> */}
 			</div>
 		</div>
 	);
