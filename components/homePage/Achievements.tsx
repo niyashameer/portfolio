@@ -8,7 +8,6 @@ const Achievements = () => {
 			<div className='w-max text-lightBlack font-bold text-4xl font-lightBlack'>
 				achievements
 			</div>
-			<div className='rounded-full w-48 h-48 bg-darkBlue absolute top-28 -left-24'></div>
 			<div className='grid grid-cols-5'>
 				<div className='w-[40%] mx-40 my-24 flex-col flex col-span-4'>
 					<div className='flex flex-col'>

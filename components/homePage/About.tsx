@@ -3,14 +3,15 @@ import SvgRenderer from "../../shared/component/svgRenderer";
 
 const About = () => {
 	return (
-		<div className='relative h-screen px-14 py-14 flex'>
-			<div className='relative w-5/12'>
-				<SvgRenderer filePath='assets/vectors/aboutMe.svg' />
-				<div className='absolute top-[35%] left-[26%] text-white font-bold text-4xl w-full'>
+		<div className='relative h-screen px-14 py-14 flex items-center'>
+			<div className='rounded-full w-48 h-48 bg-darkBlue absolute top-28 -left-24'></div>
+			<div className='mx-auto text-center flex flex-col items-center h-screen place-content-center'>
+				{/* <SvgRenderer filePath='assets/vectors/aboutMe.svg' /> */}
+				{/* <div className='text-lightBlack font-bold text-4xl w-5/12 mx-auto'>
 					about me
-				</div>
-			</div>
-			<div className='relative mt-[18%] -ml-10 flex flex-col text-2xl w-1/2 justify-between h-1/2'>
+				</div> */}
+			
+			<div className='relative mt-20 h-72 text-2xl w-1/2 justify-between mx-auto text-center'>
 				<h1 className=''>Hello, there!</h1>
 				<h2>
 					Among other things, I{" "}
@@ -25,7 +26,8 @@ const About = () => {
 					et sodales sem maximus a. Phasellus urna lacus, imperdiet sit amet
 					augue eget, pharetra dignissim turpis.
 				</h2>
-			</div>
+				</div>
+				</div>
 		</div>
 	);
 };
