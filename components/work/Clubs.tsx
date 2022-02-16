@@ -4,7 +4,7 @@ import SvgRenderer from "../../shared/component/svgRenderer";
 
 const Clubs = () => {
 	return (
-		<div className='w-full h-screen px-14 py-8 text-lightBlack'>
+		<div className='w-full h-screen px-14 py-14 text-lightBlack'>
 			<div className='w-[20%] text-lightBlack font-bold text-4xl font-lightBlack flex flex-row items-center justify-between'>
 				<span className='w-[30%]'>clubs</span>
 				<span className='w-[65%]'>

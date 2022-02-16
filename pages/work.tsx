@@ -6,10 +6,10 @@ import WorkExp from "../components/work/Work";
 
 const Work = () => {
     return <div className="text-lightBlack font-[SF_Pro_Display_Regular] w-full overflow-hidden">
-        <Clubs />
+        <Projects/>
         <WorkExp />
         <Music />
-        <Projects/>
+        <Clubs />
     </div>;
 };
 
