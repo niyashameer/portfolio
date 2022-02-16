@@ -27,14 +27,14 @@ const About = () => {
 								what inspires me
 							</span>
 							. However, this will not harbour almost entirely who I am,
-							considering that's going to be an entire journey long.
-							Nevertheless, I've always been on the lookout for experiences that
+							considering that&apos;s going to be an entire journey long.
+							Nevertheless, I&apos;ve always been on the lookout for experiences that
 							can help me grow into a{" "}
 							<span className='font-bold text-lightGreen'>
 								kinder, smarter and inspiring
 							</span>{" "}
 							woman. I hope you have the best day ahead, thank you{" "}
-							<span className='font-bold text-lightGreen'>:')</span>
+							<span className='font-bold text-lightGreen'>:&apos;)</span>
 						</h2>
 					</div>
 				</div>

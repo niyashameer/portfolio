@@ -10,9 +10,9 @@ const Skills = () => {
 			<div className='hidden md:block absolute right-10 bottom-0 w-4 h-[37%] bg-lightText'></div>
 			<div className='xsm:px-14 py-14 w-[90%] xsm:w-[500px] sm:w-[600px] lg:w-[900px] h-full flex flex-col justify-center md:mx-0 mx-auto'>
 				<div className='font-lightBlack text-xl sm:text-2xl w-full lg:w-[80%] font-bold mb-14'>
-					Struggling to come to terms with the fact that it simply isn't
+					Struggling to come to terms with the fact that it simply isn&apos;t
 					possible to know everything there is to know within the span of a
-					lifetime. However, I've managed to acquire the following skills
+					lifetime. However, I&apos;ve managed to acquire the following skills
 					through multiple experiences.
 				</div>
 				<div className='grid grid-cols-1 px-8 xsm:px-0 xsm:grid-cols-2 md:grid-cols-3 md:grid-rows-5 xsm:grid-rows-6 lg:grid-cols-4 lg:grid-rows-4 gap-10 items-center justify-between'>
