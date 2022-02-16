@@ -5,7 +5,7 @@ import VisibilitySensor from "react-visibility-sensor";
 const Achievements = () => {
 	return (
 		<div className='w-full h-screen px-14 pb-14 relative'>
-			<div className='w-max text-lightBlack font-bold text-4xl font-lightBlack'>
+			<div className='w-max text-lightText font-bold text-4xl font-lightBlack'>
 				achievements
 			</div>
 			<div className='grid grid-cols-5'>
@@ -13,14 +13,14 @@ const Achievements = () => {
 					<div className='flex flex-col'>
 						<hr className='border bg-lightBlack' />
 						<div className='h-40 mt-4 mx-4 font-bold grid grid-cols-10'>
-							<span className='col-span-2 text-orange text-2xl'>01</span>
+							<span className='col-span-2 text-lightGreen text-2xl'>01</span>
 							<span className='text-5xl col-span-6 mt-4'>Valedictorian</span>
 						</div>
 					</div>
 					<div className='flex flex-col'>
 						<hr className='border bg-lightBlack' />
 						<div className='h-40 mt-4 mx-4 font-bold grid grid-cols-10'>
-							<span className='col-span-2 text-orange text-2xl'>02</span>
+							<span className='col-span-2 text-lightGreen text-2xl'>02</span>
 							<span className='text-5xl col-span-6 mt-4'>
 								Finalist Hackedmic
 							</span>
@@ -29,7 +29,7 @@ const Achievements = () => {
 					<div className='flex flex-col'>
 						<hr className='border bg-lightBlack' />
 						<div className='h-40 mt-4 mx-4 font-bold grid grid-cols-10'>
-							<span className='col-span-2 text-orange text-2xl'>03</span>
+							<span className='col-span-2 text-lightGreen text-2xl'>03</span>
 							<span className='text-5xl col-span-6 mt-4'>
 								Finalist Hackedmic
 							</span>
@@ -40,7 +40,7 @@ const Achievements = () => {
 					<CountUp start={0} end={870} suffix='+' duration={2}>
 						{({ countUpRef, start }) => (
 							<VisibilitySensor onChange={start} delayedCall>
-								<div className='grid flex flex-col text-darkBlue font-bold w-max'>
+								<div className='flex flex-col text-lightGreen font-bold w-max'>
 									<span className='text-5xl text-center' ref={countUpRef}>
 										870
 									</span>
@@ -52,7 +52,7 @@ const Achievements = () => {
 					<CountUp start={0} end={870} suffix='+' duration={2}>
 						{({ countUpRef, start }) => (
 							<VisibilitySensor onChange={start} delayedCall>
-								<div className='grid flex flex-col text-darkBlue font-bold w-max'>
+								<div className='flex flex-col text-lightGreen font-bold w-max'>
 									<span className='text-5xl text-center' ref={countUpRef}>
 										870
 									</span>
@@ -64,7 +64,7 @@ const Achievements = () => {
 					<CountUp start={0} end={870} suffix='+' duration={2}>
 						{({ countUpRef, start }) => (
 							<VisibilitySensor onChange={start} delayedCall>
-								<div className='grid flex flex-col text-darkBlue font-bold w-max'>
+								<div className='flex flex-col text-lightGreen font-bold w-max'>
 									<span className='text-5xl text-center' ref={countUpRef}>
 										870
 									</span>
@@ -76,7 +76,7 @@ const Achievements = () => {
 					<CountUp start={0} end={870} suffix='+' duration={2}>
 						{({ countUpRef, start }) => (
 							<VisibilitySensor onChange={start} delayedCall>
-								<div className='grid flex flex-col text-darkBlue font-bold w-max'>
+								<div className='flex flex-col text-lightGreen font-bold w-max'>
 									<span className='text-5xl text-center' ref={countUpRef}>
 										870
 									</span>
