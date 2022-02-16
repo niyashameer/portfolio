@@ -26,20 +26,20 @@ export default function Hero() {
 			strings: ["Hey, I'm Niya Shameer"], // Strings to display
 			// Speed settings, try diffrent values untill you get good results
 			startDelay: 300,
-			typeSpeed: 100,
-			backSpeed: 100,
+			typeSpeed: 70,
+			backSpeed: 70,
 			backDelay: 100,
 		});
 		const typedDesc = new Typed(desc.current!, {
 			strings: [
-				"^2500",
+				"^2000",
 				"will tell y",
 				"love to be given new chal",
 				"enjoy the little things in life.",
 			], // Strings to display
 			startDelay: 300,
-			typeSpeed: 70,
-			backSpeed: 70,
+			typeSpeed: 50,
+			backSpeed: 50,
 			backDelay: 100,
 		});
 
@@ -92,41 +92,43 @@ export default function Hero() {
 	return (
 		<div className='relative h-screen hero-screen'>
 			<div className='flex flex-row items-center h-full py-14 justify-between'>
-				<div className='md:w-3/6 flex flex-col px-14 md:h-[28rem] xs:h-[24rem] h-[80%] justify-between'>
-					<div className='flex flex-col justify-around md:h-80 h-64 text-lightText'>
-						<motion.h1
-							className='font-[SF_Pro_Display_Regular] font-bold text-5xl'
-							variants={sentence}
-							initial='hidden'
-							animate='visible'>
-							{heading1.split("").map((char, index) => {
-								return (
-									<motion.span
-										key={char + "-" + index}
-										// variants={letter}
-										ref={el}>
-										{/* {char} */}
-									</motion.span>
-								);
-							})}
-						</motion.h1>
-						<motion.p
-							className='text-lighText text-lg'
-							variants={sentence}
-							initial='hidden'
-							animate='visible'>
-							I&nbsp;
-							<motion.span
-								// key={char + "-" + index}
-								// variants={letter}
-								ref={desc}></motion.span>
-						</motion.p>
-						<div className='w-full'>
-							<Button text='Resume'></Button>
+				<div className='h-full flex items-center md:w-3/6'>
+					<div className='flex flex-col px-14 md:h-[28rem] xs:h-[24rem] h-[80%] justify-between'>
+						<div className='flex flex-col justify-around md:h-80 h-[60%] text-lightText'>
+							<motion.h1
+								className='font-[SF_Pro_Display_Regular] font-bold text-5xl'
+								variants={sentence}
+								initial='hidden'
+								animate='visible'>
+								{heading1.split("").map((char, index) => {
+									return (
+										<motion.span
+											key={char + "-" + index}
+											// variants={letter}
+											ref={el}>
+											{/* {char} */}
+										</motion.span>
+									);
+								})}
+							</motion.h1>
+							<motion.p
+								className='text-lighText text-lg'
+								variants={sentence}
+								initial='hidden'
+								animate='visible'>
+								I&nbsp;
+								<motion.span
+									// key={char + "-" + index}
+									// variants={letter}
+									ref={desc}></motion.span>
+							</motion.p>
+							<div className='w-full'>
+								<Button text='Resume'></Button>
+							</div>
 						</div>
-					</div>
-					<div className='w-full lg:relative md:absolute xs:relative lg:bottom-0 md:bottom-32'>
-						<Social />
+						<div className='w-full lg:relative md:absolute xs:relative lg:bottom-0 md:bottom-32'>
+							<Social />
+						</div>
 					</div>
 				</div>
 				<div

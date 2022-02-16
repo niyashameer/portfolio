@@ -1,3 +1,4 @@
+const defaultTheme = require("tailwindcss/defaultTheme");
 module.exports = {
 	content: [
 		"./pages/**/*.{js,ts,jsx,tsx}",
@@ -10,6 +11,10 @@ module.exports = {
 		"./assets/**/*.svg",
 	],
 	theme: {
+		screens: {
+			xsm: "472px",
+			...defaultTheme.screens,
+		},
 		extend: {
 			colors: {
 				lightBlack: "#263238",
@@ -20,7 +25,7 @@ module.exports = {
 				retro: "#7F7575",
 				darkRed: "#A3112E",
 				lightGreen: "#92E3A9",
-				lightText: "#E0E0E0"
+				lightText: "#E0E0E0",
 			},
 			fontFamily: {
 				primary: ["SF-Pro-Display-Light"],

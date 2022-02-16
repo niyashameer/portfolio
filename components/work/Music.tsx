@@ -4,6 +4,8 @@ import useAudio from "../../shared/customHooks/useAudio";
 import VisibilitySensor from "react-visibility-sensor";
 import Bars from "../../shared/component/Bars";
 import { motion } from "framer-motion-3d";
+import Lottie from "lottie-web";
+import music from "../../public/assets/lottie/music.json";
 
 const Music = () => {
 	const { curTime, duration, playing, setPlaying, setClickedTime } = useAudio();
@@ -16,11 +18,42 @@ const Music = () => {
 		// isVisible ? setPlaying(true) : setPlaying(false);
 	};
 
+	useEffect(() => {
+		Lottie.loadAnimation({
+			container: document.querySelector("#icon")!,
+			animationData: music,
+			renderer: "svg",
+		});
+		Lottie.loadAnimation({
+			container: document.querySelector("#icon1")!,
+			animationData: music,
+			renderer: "svg",
+		});
+		Lottie.loadAnimation({
+			container: document.querySelector("#icon2")!,
+			animationData: music,
+			renderer: "svg",
+		});
+		Lottie.loadAnimation({
+			container: document.querySelector("#icon3")!,
+			animationData: music,
+			renderer: "svg",
+		});
+		Lottie.loadAnimation({
+			container: document.querySelector("#icon4")!,
+			animationData: music,
+			renderer: "svg",
+		});
+	}, [music]);
+
 	return (
-		<div className='relative bg-darkBlue h-[150vh] p-20'>
-			<div className='relative w-10/12 mx-auto font-[SF_Pro_Display_Regular] text-white font-bold text-4xl'>
-				<div className='w-max mx-auto'>music</div>
-				<SvgRenderer filePath='assets/vectors/music.svg' />
+		<div className='relative h-screen p-20'>
+			<div className='relative w-10/12 mx-auto font-[SF_Pro_Display_Regular] text-lightText font-bold text-4xl'>
+				<div className='relative w-max mx-auto flex h-20 items-center'>
+					<span className='h-full w-max absolute -top-2 -left-16' id='icon' />
+					music / cover
+				</div>
+				{/* <SvgRenderer filePath='assets/vectors/music.svg' /> */}
 				<audio id='audio' className='w-10/12 mx-auto'>
 					<source
 						src='assets/audio/master.mp3'
@@ -53,6 +86,10 @@ const Music = () => {
 				</div>
 				<div className='text-[#B6A49C]'>Niya Shameer</div>
 			</div>
+			{/* <div className='w-[10%] absolute left-10' id='icon1'></div> */}
+			{/* <div className='w-[10%] absolute right-10 top-2' id='icon2'></div> */}
+			{/* <div className='w-[10%] absolute right-80 bottom-72' id='icon3'></div> */}
+			{/* <div className='w-[30%] absolute right-100 bottom-0' id='icon4'></div> */}
 		</div>
 	);
 };

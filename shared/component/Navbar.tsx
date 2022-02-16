@@ -28,7 +28,7 @@ function Navbar(props: { state: boolean }) {
 					className='transition-all delay-20 duration-400 hover:text-lightGreen'>
 					Work
 				</a>
-				<a href='/'>
+				<a href='/' className='hover:text-lightGreen'>
 					{/* <div className='w-54 h-10 flex flex-row place-self-center justify-between space-x-8 hover:text-lightGreen'>
 						{/* <SvgRenderer filePath='assets/logo/logo.svg' /> */}
 					{/* </div> */}

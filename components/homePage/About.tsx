@@ -10,25 +10,36 @@ const About = () => {
 				{/* <div className='text-lightBlack font-bold text-4xl w-5/12 mx-auto'>
 					about me
 				</div> */}
-			
-			<div className='relative mt-20 h-72 text-2xl w-1/2 justify-between mx-auto text-center text-lightText'>
-				<h1 className=''>Hello, there!</h1>
-				<h2>
-					Among other things, I{" "}
-					<span className='text-lightGreen font-bold'>sing</span>,{" "}
-					<span className='text-retro font-bold'>develop websites</span> and{" "}
-					<span className='text-lightGreen font-bold'>orate</span>.
-				</h2>
-				<h2 className="w-full">
-					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec et diam
-					dignissim, scelerisque quam eu, ultrices tellus. Phasellus in sapien
-					vitae ante rutrum auctor vel quis lectus. Donec auctor risus libero,
-					et sodales sem maximus a. Phasellus urna lacus, imperdiet sit amet
-					augue eget, pharetra dignissim turpis.
-				</h2>
+
+				<div className='flex items-center'>
+					<div className='relative text-xl md:text-2xl w-[90%] md:w-[70%] xl:w-1/2  mx-auto text-center text-lightText'>
+						<h1 className='italic'>Hello, there!</h1>
+						<br />
+						<h2 className='w-full'>
+							Welcome to a little something I developed myself using{" "}
+							<span className='font-bold text-lightGreen'>
+								Next and Typescript,
+							</span>{" "}
+							among other things. This portfolio website will take you through a
+							small part of{" "}
+							<span className='font-bold text-lightGreen'>who I am</span>, and{" "}
+							<span className='font-bold text-lightGreen'>
+								what inspires me
+							</span>
+							. However, this will not harbour almost entirely who I am,
+							considering that's going to be an entire journey long.
+							Nevertheless, I've always been on the lookout for experiences that
+							can help me grow into a{" "}
+							<span className='font-bold text-lightGreen'>
+								kinder, smarter and inspiring
+							</span>{" "}
+							woman. I hope you have the best day ahead, thank you{" "}
+							<span className='font-bold text-lightGreen'>:')</span>
+						</h2>
+					</div>
 				</div>
-				</div>
+			</div>
 		</div>
 	);
 };
-export default About
+export default About;

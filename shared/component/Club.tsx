@@ -46,7 +46,7 @@ const Club = ({ filePath, text1, text2, text3, text4 }: Props) => {
 					className={`${
 						hide
 							? "rounded-2xl w-20 h-20"
-							: "border border-darkRed rounded-lg w-20 h-20 flex items-center justify-center text-2xl font-bold"
+							: "border border-lightGreen rounded-lg w-20 h-20 flex items-center justify-center text-2xl font-bold"
 					} transition-all delay-20 duration-400`}>
 					{hide ? <SvgRenderer filePath={filePath} /> : text2}
 				</div>
@@ -57,11 +57,14 @@ const Club = ({ filePath, text1, text2, text3, text4 }: Props) => {
 					className={`${
 						hide
 							? "rounded-2xl w-20 h-20"
-							: "border border-darkRed rounded-lg w-20 h-20 flex items-center justify-center text-2xl font-bold"
+							: "border border-lightGreen rounded-lg w-20 h-20 flex items-center justify-center text-2xl font-bold"
 					} transition-all delay-20 duration-400`}>
 					{hide ? <SvgRenderer filePath={filePath} /> : text4}
 				</div>
-				<div className={`${hide? '' :'border border-darkRed'} rounded-lg w-20 h-20 flex items-center justify-center text-2xl font-bold`}>
+				<div
+					className={`${
+						hide ? "" : "border border-lightGreen"
+					} rounded-lg w-20 h-20 flex items-center justify-center text-2xl font-bold`}>
 					{text1}
 				</div>
 				<div
@@ -72,7 +75,10 @@ const Club = ({ filePath, text1, text2, text3, text4 }: Props) => {
 					} transition-all delay-20 duration-400`}>
 					{hide ? text2 : <SvgRenderer filePath={filePath} />}
 				</div>
-				<div className={`${hide? '' :'border border-darkRed'} rounded-lg w-20 h-20 flex items-center justify-center text-2xl font-bold`}>
+				<div
+					className={`${
+						hide ? "" : "border border-lightGreen"
+					} rounded-lg w-20 h-20 flex items-center justify-center text-2xl font-bold`}>
 					{text3}
 				</div>
 				<div
