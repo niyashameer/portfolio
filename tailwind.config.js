@@ -16,8 +16,11 @@ module.exports = {
 				orange: "#F67833",
 				gray: "#A1A1B0",
 				darkBlue: "#17419E",
+				darkerBlue: "#263238",
 				retro: "#7F7575",
 				darkRed: "#A3112E",
+				lightGreen: "#92E3A9",
+				lightText: "#E0E0E0"
 			},
 			fontFamily: {
 				primary: ["SF-Pro-Display-Light"],
