@@ -47,7 +47,7 @@ const Music = () => {
 	}, [music]);
 
 	return (
-		<div className='relative h-screen p-20'>
+		<div className='relative h-screen p-20 flex flex-col items-center justify-center'>
 			<div className='relative w-10/12 mx-auto font-[SF_Pro_Display_Regular] text-lightText font-bold text-4xl'>
 				<div className='relative w-max mx-auto flex h-20 items-center'>
 					<span className='h-full w-max absolute -top-2 -left-16' id='icon' />

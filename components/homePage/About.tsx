@@ -3,7 +3,7 @@ import SvgRenderer from "../../shared/component/svgRenderer";
 
 const About = () => {
 	return (
-		<div className='relative h-screen px-14 py-14 flex items-center'>
+		<div className='relative h-screen px-14 flex items-center'>
 			{/* <div className='rounded-full w-48 h-48 bg-darkBlue absolute top-28 -left-24'></div> */}
 			<div className='mx-auto text-center flex flex-col items-center h-screen place-content-center'>
 				{/* <SvgRenderer filePath='assets/vectors/aboutMe.svg' /> */}
