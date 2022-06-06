@@ -28,7 +28,25 @@
 		url(/public/assets/fonts/SF-Pro-Display/sf-ui-display-medium.woff)
 			format("woff");
 }
-
+* {
+	cursor: none !important;
+}
+.featured-link {
+	display: inline-block;
+	border: 1px #000;
+	background-image: url("/assets/vectors/link.svg");
+	background-position: 102% 6px;
+	background-size: 20px;
+	background-repeat: no-repeat;
+	-webkit-transition: background-position 0.5s cubic-bezier(0.23, 1, 0.32, 1),
+		border-color 0.2s, opacity 0.2s;
+	transition: background-position 0.5s cubic-bezier(0.23, 1, 0.32, 1),
+		border-color 0.2s, opacity 0.2s;
+}
+.featured-link:hover {
+	cursor: pointer !important;
+	background-position: 102% 0px;
+}
 input:focus-within ~ label {
 	@apply transform scale-75 -translate-y-6;
 }
@@ -46,6 +64,7 @@ input:not(:placeholder-shown) ~ label {
 
 html,
 body {
+	height: 100% !important;
 	padding: 0;
 	margin: 0;
 	font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
@@ -65,7 +84,7 @@ a {
 	position: relative;
 	display: flex;
 	justify-content: space-between;
-  align-items: center;
+	align-items: center;
 	width: 30px;
 	height: 40px;
 }
@@ -77,16 +96,16 @@ a {
 	border-radius: 3px;
 	content: "";
 }
-.animate-bars span{
-  width: 8px;
+.animate-bars span {
+	width: 8px;
 	height: 100%;
 	background-color: white;
 	border-radius: 3px;
 	content: "";
-  animation: bounce 2.2s ease infinite alternate;
+	animation: bounce 2.2s ease infinite alternate;
 }
-.bars-icon span:nth-of-type(1){
-  animation-delay: -1.5s;
+.bars-icon span:nth-of-type(1) {
+	animation-delay: -1.5s;
 }
 .bars-icon span:nth-of-type(2) {
 	animation-delay: -2.2s; /* Start at the end of animation */
@@ -94,9 +113,9 @@ a {
 .bars-icon span::nth-of-type(3) {
 	animation-delay: -3.7s; /* Start mid-way of return of animation */
 }
-.hero-screen{
-  width: 100%;
-  perspective: 2000;
+.hero-screen {
+	width: 100%;
+	perspective: 2000;
 }
 @keyframes bounce {
 	10% {
@@ -121,125 +140,125 @@ a {
 }
 
 .embla {
-    position: relative;
-    background-color: #f7f7f7;
-    padding: 20px;
-    max-width: 670px;
-    margin-left: auto;
-    margin-right: auto;
-  }
-  
-  .embla__viewport {
-    overflow: hidden;
-    width: 100%;
-  }
-  
-  .embla__viewport.is-draggable {
-    cursor: move;
-    cursor: grab;
-  }
-  
-  .embla__viewport.is-dragging {
-    cursor: grabbing;
-  }
-  
-  .embla__container {
-    display: flex;
-    user-select: none;
-    -webkit-touch-callout: none;
-    -khtml-user-select: none;
-    -webkit-tap-highlight-color: transparent;
-    margin-left: -10px;
-  }
-  
-  .embla__slide {
-    padding-left: 10px;
-    min-width: 80%;
-    position: relative;
-  }
-  
-  .embla__slide__inner {
-    position: relative;
-    height: 190px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    overflow: hidden;
-  }
-  
-  .embla__slide__parallax {
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-  }
-  
-  .embla__slide__img {
-    position: absolute;
-    display: block;
-    top: 50%;
-    left: 50%;
-    width: auto;
-    min-height: 100%;
-    min-width: 100%;
-    max-width: none;
-    transform: translate(-50%, -50%);
-  }
-  
-  .embla__button {
-    outline: 0;
-    cursor: pointer;
-    background-color: transparent;
-    touch-action: manipulation;
-    position: absolute;
-    z-index: 1;
-    top: 50%;
-    transform: translateY(-50%);
-    border: 0;
-    width: 30px;
-    height: 30px;
-    justify-content: center;
-    align-items: center;
-    fill: #1bcacd;
-    padding: 0;
-  }
-  
-  .embla__button:disabled {
-    cursor: default;
-    opacity: 0.3;
-  }
-  
-  .embla__button__svg {
-    width: 100%;
-    height: 100%;
-  }
-  
-  .embla__button--prev {
-    left: 27px;
-  }
-  
-  .embla__button--next {
-    right: 27px;
-  }
-  
-  /* width */
+	position: relative;
+	background-color: #f7f7f7;
+	padding: 20px;
+	max-width: 670px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.embla__viewport {
+	overflow: hidden;
+	width: 100%;
+}
+
+.embla__viewport.is-draggable {
+	cursor: move;
+	cursor: grab;
+}
+
+.embla__viewport.is-dragging {
+	cursor: grabbing;
+}
+
+.embla__container {
+	display: flex;
+	user-select: none;
+	-webkit-touch-callout: none;
+	-khtml-user-select: none;
+	-webkit-tap-highlight-color: transparent;
+	margin-left: -10px;
+}
+
+.embla__slide {
+	padding-left: 10px;
+	min-width: 80%;
+	position: relative;
+}
+
+.embla__slide__inner {
+	position: relative;
+	height: 190px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	overflow: hidden;
+}
+
+.embla__slide__parallax {
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+}
+
+.embla__slide__img {
+	position: absolute;
+	display: block;
+	top: 50%;
+	left: 50%;
+	width: auto;
+	min-height: 100%;
+	min-width: 100%;
+	max-width: none;
+	transform: translate(-50%, -50%);
+}
+
+.embla__button {
+	outline: 0;
+	cursor: pointer;
+	background-color: transparent;
+	touch-action: manipulation;
+	position: absolute;
+	z-index: 1;
+	top: 50%;
+	transform: translateY(-50%);
+	border: 0;
+	width: 30px;
+	height: 30px;
+	justify-content: center;
+	align-items: center;
+	fill: #263238;
+	padding: 0;
+}
+
+.embla__button:disabled {
+	cursor: default;
+	opacity: 0.3;
+}
+
+.embla__button__svg {
+	width: 100%;
+	height: 100%;
+}
+
+.embla__button--prev {
+	left: 27px;
+}
+
+.embla__button--next {
+	right: 27px;
+}
+
+/* width */
 ::-webkit-scrollbar {
-  width: 5px;
+	width: 5px;
 }
 
 /* Track */
 ::-webkit-scrollbar-track {
-  background: #263238;
+	background: #263238;
 }
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: #669e76;
-  border-radius: 2px;
+	background: #669e76;
+	border-radius: 2px;
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background: #92E3A9;
+	background: #92e3a9;
 }

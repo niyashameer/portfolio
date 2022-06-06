@@ -49,7 +49,7 @@ const Music = () => {
 	return (
 		<div className='relative h-screen p-20 flex flex-col items-center justify-center'>
 			<div className='relative w-10/12 mx-auto font-[SF_Pro_Display_Regular] text-lightText font-bold text-4xl'>
-				<div className='relative w-max mx-auto flex h-20 items-center'>
+				<div className='relative w-max mx-auto flex h-20 items-center' data-kimochii-pointer='expanded'>
 					<span className='h-full w-max absolute -top-2 -left-16' id='icon' />
 					music / cover
 				</div>
@@ -68,7 +68,7 @@ const Music = () => {
 				<VisibilitySensor onChange={onChange} delayedCall>
 					<div
 						className='relative bg-[#B6A49C] w-24 h-34 rounded-full self-center drop-shadow-3xl cursor-pointer'
-						onClick={onClickHandler}>
+						onClick={onClickHandler} data-kimochii-pointer='expanded'>
 						{playing ? (
 							<SvgRenderer filePath='assets/vectors/pause.svg' />
 						) : (

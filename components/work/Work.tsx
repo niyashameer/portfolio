@@ -7,8 +7,8 @@ const Work = () => {
 			{/* <div className='absolute left-0 top-0 w-96'>
 				<SvgRenderer filePath={"assets/vectors/worksvg.svg"} />
 			</div> */}
-			<div className='font-bold text-4xl flex items-center lg:h-full md:text-center text-left lg:w-[40%] w-full h-72'>
-				<div className='w-full'>work experience</div>
+			<div className='font-bold text-4xl flex items-center lg:h-full md:text-center text-left lg:w-[40%] w-full h-72' >
+				<div className='w-full' data-kimochii-pointer='expanded'>work experience</div>
 			</div>
 			<div className='flex w-full md:items-center md:justify-center lg:h-full xl:w-3/4 md:w-[60%]'>
 				<div className='md:mx-40 my-4 flex-col flex float-right'>

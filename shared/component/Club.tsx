@@ -37,6 +37,7 @@ const Club = ({ filePath, text1, text2, text3, text4 }: Props) => {
 			<div
 				className='grid grid-cols-4 grid-rows-2 gap-2 w-max h-[60%] items-center place-items-center'
 				id='parent-hover'
+				data-kimochii-pointer='expanded'
 				onMouseEnter={mouseOver}
 				onMouseLeave={mouseOut}>
 				<div className='rounded-2xl w-20 h-20'>

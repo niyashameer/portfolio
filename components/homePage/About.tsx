@@ -1,9 +1,12 @@
+import { motion } from "framer-motion";
 import React from "react";
 import SvgRenderer from "../../shared/component/svgRenderer";
 
 const About = () => {
 	return (
-		<div className='relative h-screen px-14 flex items-center'>
+		<div
+			className='relative h-screen px-14 flex items-center'
+			data-kimochii-pointer='expanded'>
 			{/* <div className='rounded-full w-48 h-48 bg-darkBlue absolute top-28 -left-24'></div> */}
 			<div className='mx-auto text-center flex flex-col items-center h-screen place-content-center'>
 				{/* <SvgRenderer filePath='assets/vectors/aboutMe.svg' /> */}
@@ -12,7 +15,9 @@ const About = () => {
 				</div> */}
 
 				<div className='flex items-center'>
-					<div className='relative text-xl md:text-2xl w-[90%] md:w-[70%] xl:w-1/2  mx-auto text-center text-lightText'>
+					<motion.div
+						transition={{ type: "inertia", velocity: 50 }}
+						className='relative text-xl md:text-2xl w-[90%] md:w-[70%] xl:w-1/2  mx-auto text-center text-lightText'>
 						<h1 className='italic'>Hello, there!</h1>
 						<br />
 						<h2 className='w-full'>
@@ -28,15 +33,15 @@ const About = () => {
 							</span>
 							. However, this will not harbour almost entirely who I am,
 							considering that&apos;s going to be an entire journey long.
-							Nevertheless, I&apos;ve always been on the lookout for experiences that
-							can help me grow into a{" "}
+							Nevertheless, I&apos;ve always been on the lookout for experiences
+							that can help me grow into a{" "}
 							<span className='font-bold text-lightGreen'>
 								kinder, smarter and inspiring
 							</span>{" "}
 							woman. I hope you have the best day ahead, thank you{" "}
 							<span className='font-bold text-lightGreen'>:&apos;)</span>
 						</h2>
-					</div>
+					</motion.div>
 				</div>
 			</div>
 		</div>

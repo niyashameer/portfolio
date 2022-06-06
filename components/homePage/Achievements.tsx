@@ -14,7 +14,7 @@ const Achievements = () => {
 					<div className='flex flex-col'>
 						<hr className='border bg-lightBlack' />
 						<div className='h-40 sm:h-56 md:h-40 mt-4 mx-4 font-bold grid grid-cols-10'>
-							<span className='col-span-2 text-lightGreen text-2xl'>01</span>
+							<span className='col-span-2 text-lightGreen text-2xl' >01</span>
 							<span className='text-xl xsm:text-3xl lg:text-4xl font-semibold col-span-6 mt-4'>
 								Valedictorian academic year 2019-2020
 							</span>
@@ -39,7 +39,7 @@ const Achievements = () => {
 						</div>
 					</div>
 				</div>
-				<div className='flex flex-wrap sm:flex-col col-span-1 text-right xsm:my-24 xsm:h-[30rem] justify-around'>
+				{/* <div className='flex flex-wrap sm:flex-col col-span-1 text-right xsm:my-24 xsm:h-[30rem] justify-around'>
 					<CountUp start={0} end={870} suffix='+' duration={2}>
 						{({ countUpRef, start }) => (
 							<VisibilitySensor onChange={start} delayedCall>
@@ -88,7 +88,7 @@ const Achievements = () => {
 							</VisibilitySensor>
 						)}
 					</CountUp>
-				</div>
+				</div> */}
 			</div>
 		</div>
 	);

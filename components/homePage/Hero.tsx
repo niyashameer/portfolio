@@ -7,6 +7,7 @@ import { motion as mot } from "framer-motion-3d";
 import Lottie from "lottie-web";
 import LottieAnimation from "../../public/assets/lottie/coder.json";
 import Typed from "typed.js";
+import Link from "next/link";
 
 export default function Hero() {
 	const heading1 = "Hey, I'm Niya Shameer";
@@ -22,14 +23,15 @@ export default function Hero() {
 	const desc = useRef(null);
 
 	useEffect(() => {
-		const typed = new Typed(el.current!, {
-			strings: ["Hey, I'm Niya Shameer"], // Strings to display
-			// Speed settings, try diffrent values untill you get good results
-			startDelay: 300,
-			typeSpeed: 70,
-			backSpeed: 70,
-			backDelay: 100,
-		});
+		// const typed = new Typed(el.current!, {
+		// 	strings: ["Hey, I'm Niya Shameer"], // Strings to display
+		// 	// Speed settings, try diffrent values untill you get good results
+		// 	startDelay: 300,
+		// 	typeSpeed: 70,
+		// 	backSpeed: 70,
+		// 	backDelay: 100,
+		// });
+
 		const typedDesc = new Typed(desc.current!, {
 			strings: [
 				"^2000",
@@ -45,7 +47,7 @@ export default function Hero() {
 
 		// Destropying
 		return () => {
-			typed.destroy();
+			// typed.destroy();
 			typedDesc.destroy();
 		};
 	}, []);
@@ -56,7 +58,7 @@ export default function Hero() {
 			animationData: LottieAnimation,
 			renderer: "svg",
 		});
-	}, [LottieAnimation]);
+	}, []);
 
 	const sentence = {
 		hidden: { opacity: 1 },
@@ -89,6 +91,14 @@ export default function Hero() {
 		rotate: "20deg",
 		zIndex: 10000,
 	};
+	const hoverLink = (event: any) => {
+		const heading = document.getElementById("header-text");
+		heading?.classList.add("opacity-30");
+	};
+	const hoverLeave = (event: any) => {
+		const heading = document.getElementById("header-text");
+		heading?.classList.remove("opacity-30");
+	};
 	return (
 		<div className='relative h-screen hero-screen'>
 			<div className='flex flex-row items-center h-full py-14 justify-between'>
@@ -96,22 +106,42 @@ export default function Hero() {
 					<div className='flex flex-col px-14 md:h-[28rem] xs:h-[24rem] h-[80%] justify-between'>
 						<div className='flex flex-col justify-around md:h-80 h-[60%] text-lightText'>
 							<motion.h1
-								className='font-[SF_Pro_Display_Regular] font-bold text-5xl'
+								className='font-[SF_Pro_Display_Regular]'
 								variants={sentence}
 								initial='hidden'
 								animate='visible'>
-								{heading1.split("").map((char, index) => {
+								{/* {heading1.split("").map((char, index) => {
 									return (
 										<motion.span
 											key={char + "-" + index}
 											// variants={letter}
 											ref={el}>
 											{/* {char} */}
-										</motion.span>
+								{/* </motion.span>
 									);
-								})}
+								})}  */}
+								<div>
+									<span
+										data-kimochii-pointer='text'
+										className='font-bold text-5xl transition-all delay-150'
+										id='header-text'>
+										Hey, I&apos;m{" "}
+									</span>
+									<Link href='https://www.linkedin.com/in/niyashameer/'>
+										<a
+											target="_blank"
+											data-kimochii-pointer='lighter'
+											className='featured-link font-bold text-5xl px-2 transition-all delay-150'
+											id='link-element'
+											onMouseOver={hoverLink}
+											onMouseLeave={hoverLeave}>
+											Niya Shameer
+										</a>
+									</Link>
+								</div>
 							</motion.h1>
 							<motion.p
+								data-kimochii-pointer='text'
 								className='text-lighText text-lg'
 								variants={sentence}
 								initial='hidden'
@@ -133,7 +163,8 @@ export default function Hero() {
 				</div>
 				<div
 					className='hidden md:block lg:w-[60rem] lg:h-[34rem] lg:-mr-[15rem] md:-mr-[10rem]'
-					id='code'>
+					id='code'
+					data-kimochii-pointer='hidden'>
 					{/* <SvgRenderer
 						filePath='/assets/vectors/hero.png'
 						widthClassProperties='w-full'
