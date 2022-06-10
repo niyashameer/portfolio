@@ -1,9 +1,7 @@
 import React, { useEffect, useRef } from "react";
 import Button from "../../shared/component/Button";
-import SvgRenderer from "../../shared/component/svgRenderer";
 import Social from "../../shared/component/social";
 import { motion, useMotionValue, useTransform } from "framer-motion";
-import { motion as mot } from "framer-motion-3d";
 import Lottie from "lottie-web";
 import LottieAnimation from "../../public/assets/lottie/coder.json";
 import Typed from "typed.js";
@@ -23,14 +21,6 @@ export default function Hero() {
 	const desc = useRef(null);
 
 	useEffect(() => {
-		// const typed = new Typed(el.current!, {
-		// 	strings: ["Hey, I'm Niya Shameer"], // Strings to display
-		// 	// Speed settings, try diffrent values untill you get good results
-		// 	startDelay: 300,
-		// 	typeSpeed: 70,
-		// 	backSpeed: 70,
-		// 	backDelay: 100,
-		// });
 
 		const typedDesc = new Typed(desc.current!, {
 			strings: [
@@ -110,16 +100,6 @@ export default function Hero() {
 								variants={sentence}
 								initial='hidden'
 								animate='visible'>
-								{/* {heading1.split("").map((char, index) => {
-									return (
-										<motion.span
-											key={char + "-" + index}
-											// variants={letter}
-											ref={el}>
-											{/* {char} */}
-								{/* </motion.span>
-									);
-								})}  */}
 								<div>
 									<span
 										data-kimochii-pointer='text'
@@ -148,8 +128,6 @@ export default function Hero() {
 								animate='visible'>
 								I&nbsp;
 								<motion.span
-									// key={char + "-" + index}
-									// variants={letter}
 									ref={desc}></motion.span>
 							</motion.p>
 							<div className='w-full'>
@@ -165,10 +143,6 @@ export default function Hero() {
 					className='hidden md:block lg:w-[60rem] lg:h-[34rem] lg:-mr-[15rem] md:-mr-[10rem]'
 					id='code'
 					data-kimochii-pointer='hidden'>
-					{/* <SvgRenderer
-						filePath='/assets/vectors/hero.png'
-						widthClassProperties='w-full'
-					/> */}
 				</div>
 			</div>
 		</div>

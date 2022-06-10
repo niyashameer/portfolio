@@ -39,7 +39,7 @@ const Achievements = () => {
 						</div>
 					</div>
 				</div>
-				{/* <div className='flex flex-wrap sm:flex-col col-span-1 text-right xsm:my-24 xsm:h-[30rem] justify-around'>
+				<div className='flex flex-wrap sm:flex-col col-span-1 text-right xsm:my-24 xsm:h-[30rem] justify-around'>
 					<CountUp start={0} end={870} suffix='+' duration={2}>
 						{({ countUpRef, start }) => (
 							<VisibilitySensor onChange={start} delayedCall>
@@ -88,7 +88,7 @@ const Achievements = () => {
 							</VisibilitySensor>
 						)}
 					</CountUp>
-				</div> */}
+				</div>
 			</div>
 		</div>
 	);

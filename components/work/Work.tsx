@@ -4,9 +4,6 @@ import SvgRenderer from "../../shared/component/svgRenderer";
 const Work = () => {
 	return (
 		<div className='relative w-full h-screen py-14 px-14 md:px-20 font-lightBlack flex lg:flex-row flex-col justify-center items-center'>
-			{/* <div className='absolute left-0 top-0 w-96'>
-				<SvgRenderer filePath={"assets/vectors/worksvg.svg"} />
-			</div> */}
 			<div className='font-bold text-4xl flex items-center lg:h-full md:text-center text-left lg:w-[40%] w-full h-72' >
 				<div className='w-full' data-kimochii-pointer='expanded'>work experience</div>
 			</div>

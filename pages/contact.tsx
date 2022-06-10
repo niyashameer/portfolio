@@ -10,9 +10,6 @@ const Contact = () => {
 				<meta name='description' content='Personal Portfolio of Niya Shameer' />
 				<link rel='icon' href='/favicon.ico' />
 			</Head>
-			{/* <div className='text-3xl text-lightBlack font-bold mx-auto w-max py-14'>
-				CONTACT ME
-			</div> */}
 			<div className='h-full w-full text-xl flex flex-col justify-between'>
 				<div className='flex flex-col w-60'>
 					<div className='font-semibold'>general</div>

@@ -7,12 +7,8 @@ const About = () => {
 		<div
 			className='relative h-screen px-14 flex items-center'
 			data-kimochii-pointer='expanded'>
-			{/* <div className='rounded-full w-48 h-48 bg-darkBlue absolute top-28 -left-24'></div> */}
 			<div className='mx-auto text-center flex flex-col items-center h-screen place-content-center'>
-				{/* <SvgRenderer filePath='assets/vectors/aboutMe.svg' /> */}
-				{/* <div className='text-lightBlack font-bold text-4xl w-5/12 mx-auto'>
-					about me
-				</div> */}
+				
 
 				<div className='flex items-center'>
 					<motion.div

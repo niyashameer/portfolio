@@ -15,19 +15,10 @@ const Club = ({ filePath, text1, text2, text3, text4 }: Props) => {
 	useEffect(() => {}, [hide]);
 
 	const mouseOver = () => {
-		// const element = document.getElementById("on-hover");
-		// const parent = document.getElementById("parent-hover");
-		// parent?.classList.add("hidden");
-		// element?.classList.remove("hidden");
-		// console.log('mouseover')
 		setHide(true);
 		console.log("ok");
 	};
 	const mouseOut = () => {
-		// const element = document.getElementById("on-hover");
-		// const parent = document.getElementById("parent-hover");
-		// element?.classList.add("hidden");
-		// parent?.classList.remove("hidden");
 		setHide(false);
 		console.log("mouseout");
 	};

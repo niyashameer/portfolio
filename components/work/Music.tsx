@@ -15,7 +15,7 @@ const Music = () => {
 	};
 
 	const onChange = (isVisible: any) => {
-		// isVisible ? setPlaying(true) : setPlaying(false);
+		isVisible ? setPlaying(true) : setPlaying(false);
 	};
 
 	useEffect(() => {
@@ -53,7 +53,6 @@ const Music = () => {
 					<span className='h-full w-max absolute -top-2 -left-16' id='icon' />
 					music / cover
 				</div>
-				{/* <SvgRenderer filePath='assets/vectors/music.svg' /> */}
 				<audio id='audio' className='w-10/12 mx-auto'>
 					<source
 						src='assets/audio/master.mp3'
@@ -86,10 +85,6 @@ const Music = () => {
 				</div>
 				<div className='text-[#B6A49C]'>Niya Shameer</div>
 			</div>
-			{/* <div className='w-[10%] absolute left-10' id='icon1'></div> */}
-			{/* <div className='w-[10%] absolute right-10 top-2' id='icon2'></div> */}
-			{/* <div className='w-[10%] absolute right-80 bottom-72' id='icon3'></div> */}
-			{/* <div className='w-[30%] absolute right-100 bottom-0' id='icon4'></div> */}
 		</div>
 	);
 };
