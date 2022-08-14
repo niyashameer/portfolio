@@ -10,6 +10,7 @@
   "dependencies": {
     "@react-three/fiber": "^7.0.26",
     "@sanity/cli": "^2.23.2",
+    "@types/node": "^18.7.3",
     "embla-carousel-react": "^6.2.0",
     "framer-motion": "^6.2.4",
     "framer-motion-3d": "^6.2.4",
