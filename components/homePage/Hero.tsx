@@ -9,9 +9,6 @@ import Link from "next/link";
 
 export default function Hero() {
 	const heading1 = "Hey, I'm Niya Shameer";
-	const description =
-		"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec etdiam dignissim, scelerisque quam eu, ultrices tellus";
-
 	const x = useMotionValue(0);
 	const y = useMotionValue(0);
 	const rotateX = useTransform(y, [-100, 100], [30, -30]);
@@ -24,10 +21,9 @@ export default function Hero() {
 
 		const typedDesc = new Typed(desc.current!, {
 			strings: [
-				"^2000",
-				"will tell y",
-				"love to be given new chal",
-				"enjoy the little things in life.",
+				"develop websites",
+				"sing (mostly Adele)",
+				"am currently a CSE undergrad student at SRM",
 			], // Strings to display
 			startDelay: 300,
 			typeSpeed: 50,
@@ -102,7 +98,6 @@ export default function Hero() {
 								animate='visible'>
 								<div>
 									<span
-										data-kimochii-pointer='text'
 										className='font-bold text-5xl transition-all delay-150'
 										id='header-text'>
 										Hey, I&apos;m{" "}
@@ -110,7 +105,6 @@ export default function Hero() {
 									<Link href='https://www.linkedin.com/in/niyashameer/'>
 										<a
 											target="_blank"
-											data-kimochii-pointer='lighter'
 											className='featured-link font-bold text-5xl px-2 transition-all delay-150'
 											id='link-element'
 											onMouseOver={hoverLink}
@@ -121,7 +115,6 @@ export default function Hero() {
 								</div>
 							</motion.h1>
 							<motion.p
-								data-kimochii-pointer='text'
 								className='text-lighText text-lg'
 								variants={sentence}
 								initial='hidden'
@@ -131,7 +124,7 @@ export default function Hero() {
 									ref={desc}></motion.span>
 							</motion.p>
 							<div className='w-full'>
-								<Button text='Resume'></Button>
+								<Button text='Resume' download={true}></Button>
 							</div>
 						</div>
 						<div className='w-full lg:relative md:absolute xs:relative lg:bottom-0 md:bottom-32'>
@@ -141,8 +134,7 @@ export default function Hero() {
 				</div>
 				<div
 					className='hidden md:block lg:w-[60rem] lg:h-[34rem] lg:-mr-[15rem] md:-mr-[10rem]'
-					id='code'
-					data-kimochii-pointer='hidden'>
+					id='code'>
 				</div>
 			</div>
 		</div>
