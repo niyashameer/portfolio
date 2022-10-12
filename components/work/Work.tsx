@@ -53,7 +53,7 @@ const Work = () => {
 							<span className='col-span-2'></span>
 							<span className='col-span-3'>Frontend Developer</span>&nbsp;
 							<span className='text-lightGreen text-xs col-span-2 mt-1.5 font-semibold'>
-								02/22 - present
+								02/22 - 03/22
 							</span>
 						</div>
 					</div>

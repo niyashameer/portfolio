@@ -12,7 +12,7 @@ const Clubs = () => {
 			</div>
 			<div className="flex h-full items-center"><div className='w-[70%] h-[400px] py-8 px-8 grid grid-cols-2 gap-x-20 justify-between mx-auto'>
                 <Club filePath="assets/vectors/alexa-svg.svg" text1="alexa" text2="devel" text3="opers" text4="srm" />
-                <Club filePath="assets/logo/ted_logo.svg" text1="srm" text2="mun" text3="soc" text4="iety" />
+                <Club filePath="assets/logo/ted_logo.svg" text1="TED" text2="x" text3="SRM" text4="IST" />
 			</div>
 			</div>
 		</div>
