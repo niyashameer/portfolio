@@ -15,13 +15,13 @@ const Work = () => {
 							<span className='sm:block hidden col-span-2 text-lightGreen text-2xl'>
 								01
 							</span>
-							<span className='text-3xl col-span-4 mt-4'>Heiphen</span>
+							<span className='text-3xl col-span-4 mt-4'>Quinence</span>
 						</div>
 						<div className='mx-4 flex flex-col sm:grid grid-cols-10 sm:items-center'>
 							<span className='sm:col-span-2'></span>
-							<span className='sm:col-span-3'>Frontend Developer</span>&nbsp;
+							<span className='sm:col-span-3'>Frontend Developer Intern</span>&nbsp;
 							<span className='text-lightGreen text-xs sm:col-span-2 mt-1.5 font-semibold'>
-								09/21 - 03/22
+								Present
 							</span>
 						</div>
 					</div>
@@ -47,13 +47,13 @@ const Work = () => {
 							<span className='sm:block hidden col-span-2 text-lightGreen text-2xl'>
 								03
 							</span>
-							<span className='text-3xl col-span-6 mt-4'>Docsup</span>
+							<span className='text-3xl col-span-6 mt-4'>Infosys</span>
 						</div>
 						<div className='mx-4 flex flex-col sm:grid grid-cols-10 sm:items-center'>
 							<span className='col-span-2'></span>
-							<span className='col-span-3'>Frontend Developer</span>&nbsp;
+							<span className='col-span-3'>iOS App Developer Intern</span>&nbsp;
 							<span className='text-lightGreen text-xs col-span-2 mt-1.5 font-semibold'>
-								02/22 - 03/22
+								04/23 - 05/23
 							</span>
 						</div>
 					</div>
