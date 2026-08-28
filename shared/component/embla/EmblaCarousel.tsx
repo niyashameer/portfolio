@@ -34,7 +34,7 @@ const EmblaCarousel = ({ slides } :any) => {
 
       if (engine.options.loop) {
         engine.slideLooper.loopPoints.forEach((loopItem) => {
-          const target = loopItem.getTarget();
+          const target = loopItem.target()
           if (index === loopItem.index && target !== 0) {
             const sign = Math.sign(target);
             if (sign === -1) diffToTarget = scrollSnap - (1 + scrollProgress);

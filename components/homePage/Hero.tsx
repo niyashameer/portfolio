@@ -104,15 +104,13 @@ export default function Hero() {
 										id='header-text'>
 										Hey, I&apos;m{" "}
 									</span>
-									<Link href='https://www.linkedin.com/in/niyashameer/'>
-										<a
+									<Link href='https://www.linkedin.com/in/niyashameer/'
 											target="_blank"
 											className='featured-link font-bold text-5xl px-2 transition-all delay-150'
 											id='link-element'
 											onMouseOver={hoverLink}
 											onMouseLeave={hoverLeave}>
 											Niya Shameer
-										</a>
 									</Link>
 								</div>
 							</motion.h1>

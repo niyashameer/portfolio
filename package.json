@@ -1,6 +1,9 @@
 {
   "name": "portfolio",
   "private": true,
+  "engines": {
+    "node": "20.x"
+  },
   "scripts": {
     "dev": "next dev",
     "build": "next build",
@@ -8,32 +11,40 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@react-three/fiber": "^7.0.26",
+    "@react-three/fiber": "^8.15.16",
     "@sanity/cli": "^2.23.2",
-    "@types/node": "^18.7.3",
-    "embla-carousel-react": "^6.2.0",
-    "framer-motion": "^6.2.4",
-    "framer-motion-3d": "^6.2.4",
-    "gsap": "^3.10.4",
-    "lottie-web": "^5.8.1",
-    "next": "^12.2.5",
-    "react": "17.0.2",
-    "react-countup": "^6.1.1",
-    "react-dom": "17.0.2",
-    "react-icons": "^4.3.1",
+    "embla-carousel-react": "^8.0.0",
+    "framer-motion": "^11.0.8",
+    "framer-motion-3d": "^11.0.8",
+    "gsap": "^3.12.5",
+    "lottie-web": "^5.12.2",
+    "next": "16.3.3",
+    "react": "18.3.1",
+    "react-countup": "^6.5.3",
+    "react-dom": "18.3.1",
+    "react-icons": "^5.0.1",
     "react-use-measure": "^2.1.1",
     "react-visibility-sensor": "^5.1.1",
-    "swiper": "^8.3.2",
-    "three": "^0.137.5",
-    "typed.js": "^2.0.12",
-    "typescript": "^4.5.4"
+    "swiper": "^11.0.7",
+    "three": "^0.160.1",
+    "typed.js": "^2.1.0",
+    "typescript": "^5.4.3"
   },
   "devDependencies": {
-    "@types/react": "^18.0.17",
-    "autoprefixer": "^10.4.0",
-    "eslint": "8.5.0",
-    "eslint-config-next": "12.0.7",
-    "postcss": "^8.4.5",
-    "tailwindcss": "^3.0.7"
+    "@types/node": "^20.11.30",
+    "@types/react": "19.2.18",
+    "@types/react-dom": "19.2.5",
+    "@types/three": "^0.160.0",
+    "autoprefixer": "^10.4.19",
+    "eslint": "10.9.1",
+    "eslint-config-next": "16.3.3",
+    "postcss": "^8.4.38",
+    "tailwindcss": "^3.4.3"
+  },
+  "pnpm": {
+    "overrides": {
+      "@types/react": "19.2.18",
+      "@types/react-dom": "19.2.5"
+    }
   }
 }

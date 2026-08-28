@@ -1,14 +1,11 @@
 import React, { useRef, useState } from "react";
-// Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
 
-// Import Swiper styles
 import "swiper/css";
 import "swiper/css/effect-creative";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
-// import required modules
-import { EffectCreative, Pagination } from "swiper";
+import { EffectCreative, Pagination } from "swiper/modules";
 import Link from "next/link";
 
 const Projects = () => {
@@ -44,8 +41,7 @@ const Projects = () => {
 				modules={[EffectCreative, Pagination]}
 				className='mySwiper'>
 				<SwiperSlide>
-					<Link href='https://heiphen.com/'>
-						<a
+					<Link href='https://heiphen.com/'
 							target='_blank'
 							className='projects-link'
 							id='link-element'
@@ -55,12 +51,10 @@ const Projects = () => {
 							<div className='middle featured-link rounded p-2 bg-retro'>
 								Visit Website
 							</div>
-						</a>
 					</Link>
 				</SwiperSlide>
 				<SwiperSlide>
-					<Link href='https://flamapp.com/careers.html'>
-						<a
+					<Link href='https://flamapp.com/careers.html'
 							target='_blank'
 							className='projects-link'
 							id='link-element'
@@ -70,45 +64,39 @@ const Projects = () => {
 							<div className='middle featured-link rounded p-2 bg-retro'>
 								Visit Website
 							</div>
-						</a>
 					</Link>
 				</SwiperSlide>
 				<SwiperSlide>
-					<Link href='https://www.figma.com/file/9UOA3L9NkfeuWK6uIubX2H/Atypical?node-id=0%3A1'>
-						<a
-							target='_blank'
-							className='projects-link'
-							id='link-element'
-							onMouseOver={hoverLink}
-							onMouseLeave={hoverLeave}>
-							<img src='/assets/projects/atypical.jpg' alt="atypical image"/>
-							<div className='middle featured-link rounded p-2 bg-retro'>
-								Visit Figma
-							</div>
-						</a>
-					</Link>
+				<Link
+					href='https://www.figma.com/file/9UOA3L9NkfeuWK6uIubX2H/Atypical?node-id=0%3A1'
+					target='_blank'
+					rel='noopener noreferrer'
+					className='projects-link'
+					id='link-element'
+					onMouseOver={hoverLink}
+					onMouseLeave={hoverLeave}>
+					<img src='/assets/projects/atypical.jpg' alt='atypical image' />
+					<div className='middle featured-link rounded p-2 bg-retro'>Visit Figma</div>
+					
+				</Link>
 				</SwiperSlide>
 				<SwiperSlide>
 					<img src='/assets/projects/greenarray.jpg' alt="greenarray img"/>
 				</SwiperSlide>
 				<SwiperSlide>
-					<Link href='https://techanalogy.org/'>
-						<a
-							target='_blank'
-							className='projects-link'
-							id='link-element'
-							onMouseOver={hoverLink}
-							onMouseLeave={hoverLeave}>
-							<img src='/assets/projects/ta.jpg' alt="techanalogy img"/>
-							<div className='middle featured-link rounded p-2 bg-retro'>
-								Visit Website
-							</div>
-						</a>
-					</Link>
+					<Link href='https://techanalogy.org/'
+					target='_blank'
+					className='projects-link'
+					id='link-element'
+					onMouseOver={hoverLink}
+					onMouseLeave={hoverLeave}>
+					<img src='/assets/projects/ta.jpg' alt="techanalogy img"/>
+					<div className='middle featured-link rounded p-2 bg-retro'>
+						Visit Website
+					</div></Link>
 				</SwiperSlide>
 				<SwiperSlide>
-					<Link href='https://developer.amazon.com/alexa/console/ask'>
-						<a
+					<Link href='https://developer.amazon.com/alexa/console/ask'
 							target='_blank'
 							className='projects-link'
 							id='link-element'
@@ -118,12 +106,10 @@ const Projects = () => {
 							<div className='middle featured-link rounded p-2 bg-retro'>
 								Visit Alexa Developer Console
 							</div>
-						</a>
 					</Link>
 				</SwiperSlide>
 				<SwiperSlide>
-					<Link href='https://alexadevsrm.com/'>
-						<a
+					<Link href='https://alexadevsrm.com/'
 							target='_blank'
 							className='projects-link'
 							id='link-element'
@@ -133,12 +119,10 @@ const Projects = () => {
 							<div className='middle featured-link rounded p-2 bg-retro'>
 								Visit Website
 							</div>
-						</a>
 					</Link>
 				</SwiperSlide>
 				<SwiperSlide>
-					<Link href='/'>
-						<a
+					<Link href='/'
 							target='_blank'
 							className='projects-link'
 							id='link-element'
@@ -148,7 +132,6 @@ const Projects = () => {
 							<div className='middle featured-link rounded p-2 bg-retro'>
 								Visit Website
 							</div>
-						</a>
 					</Link>
 				</SwiperSlide>
 			</Swiper>
