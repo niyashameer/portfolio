@@ -24,17 +24,22 @@ function Navbar(props: { state: boolean }) {
 			// 	: `border-x-[${progress}px] border-darkBlue text-black`}
 			className={`z-50 top-0 left-0 flex items-center w-full font-[SF_Pro_Display_Regular] font-lightBlack h-[4.5rem] px-14 justify-center space-x-8 transition-all delay-150 mx-auto text-lg  bg-darkerBlue text-lightText hover:drop-shadow-none drop-shadow-3xl`}>
 			<div className='flex items-center space-x-8 place-self-center float-right'>
-				<Link href='/work'>
-					<a className='transition-all delay-20 duration-400 hover:text-lightGreen px-4 py-2 z-[20000000]'>
-						Work
-					</a>
-				</Link>
 				<Link href='/'>
 					<a className='hover:text-lightGreen px-4 py-2 z-[20000000]'>
 						{/* <div className='w-54 h-10 flex flex-row place-self-center justify-between space-x-8 hover:text-lightGreen'>
 						{/* <SvgRenderer filePath='assets/logo/logo.svg' /> */}
 						{/* </div> */}
 						Home
+					</a>
+				</Link>
+				<Link href='/work'>
+					<a className='transition-all delay-20 duration-400 hover:text-lightGreen px-4 py-2 z-[20000000]'>
+						Work
+					</a>
+				</Link>
+				<Link href='/gallery'>
+					<a className='transition-all delay-20 duration-400 hover:text-lightGreen px-4 py-2 z-[20000000]'>
+						Gallery
 					</a>
 				</Link>
 				<Link href='/contact'>

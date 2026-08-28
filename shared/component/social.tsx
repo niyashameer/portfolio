@@ -13,15 +13,6 @@ export default function Social() {
                 <FaLinkedinIn />
               </a>
             </div>
-            <div className="instagram border-2 border-lightGreen text-lightGreen rounded-full p-1.5 hover:bg-lightGreen hover:lightGreen hover:text-darkerBlue cursor-pointer transition duration-300 ease-in">
-              <a
-                href="https://www.instagram.com/niya._.shameeer/"
-                target="_blank"
-                rel="noreferrer"
-              >
-                <FaInstagram />
-              </a>
-            </div>
 
             <div className="github rounded-full border-2 border-lightGreen text-lightGreen p-1.5 hover:bg-lightGreen hover:border-lightGreen hover:text-darkerBlue cursor-pointer transition duration-300 ease-in">
               <a

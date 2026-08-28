@@ -5,7 +5,7 @@ const Clubs = () => {
 	return (
 		<div className='w-full h-screen px-14 py-14 text-lightText'>
 			<div className='w-[40%] text-lightText font-bold text-4xl font-lightBlack flex flex-row items-center justify-between'>
-				<span className='w-[70%]'>student clubs</span>
+				<span className='w-[70%]'>Student Clubs</span>
 				<span className='w-[100%]'>
 					<hr className='border-2 border-lightGreen bg-lightGreen mt-2' />
 				</span>

@@ -23,7 +23,8 @@ const Projects = () => {
 	return (
     <div className='w-full h-full px-14 py-14 text-lightText'>
       <div className='w-max text-lightText font-bold text-4xl font-lightBlack'>
-				projects
+				Projects&nbsp;
+				<span>(non-private)</span>
 			</div>
 			<Swiper
 				grabCursor={true}

@@ -21,10 +21,12 @@ export default function Hero() {
 
 		const typedDesc = new Typed(desc.current!, {
 			strings: [
-				"develop websites",
-				"sing (mostly Adele)",
-				"am currently a CSE undergrad student at SRM",
-			], // Strings to display
+				"am a Software Engineer at CERN",
+				"love to travel, ski and hike",
+				"get lost in novels, philosophy and music",
+				"play badminton and sing",
+				"absolutely love to cook",
+			], 
 			startDelay: 300,
 			typeSpeed: 50,
 			backSpeed: 50,
